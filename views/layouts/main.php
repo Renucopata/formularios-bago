@@ -36,8 +36,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <?php echo $this->render('_header') ?>
     
     <main class="d-flex flex-grow-1">
-        
-        <?php echo $this->render('_sidebar') ?>
+    <?php 
+    if (!Yii::$app->user->isGuest) {
+        echo $this->render('_sidebar');
+    }
+    ?>
         
         <div class="content-wrapper p-3">
             <?php if (!empty($this->params['breadcrumbs'])): ?>

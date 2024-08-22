@@ -28,7 +28,7 @@ use yii\bootstrap5\Html;
                 : '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->USERNAME . ')',
+                        'Logout (' . Yii::$app->user->identity->NOMBRES . ')',
                         ['class' => 'nav-link btn btn-link logout']
                     )
                     . Html::endForm()
