@@ -3,5 +3,8 @@
 /** @var yii\web\View $this */
 
 $this->title = 'Formularios-Visitador';
-echo'index'
 ?>
+
+<div class="site-index">
+    Index
+</div>

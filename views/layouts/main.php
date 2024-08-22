@@ -27,33 +27,30 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
 <?php $this->beginBody() ?>
 
 
-
-    <div class="mb-3">
-        <?php echo $this->render('_header') ?>
-    </div>
-   
-
-
-
-<main class="d-flex">
+<div class="wrap h-100 d-flex flex-column">
     
+    <?php echo $this->render('_header') ?>
+    
+    <main class="d-flex flex-grow-1">
+        
         <?php echo $this->render('_sidebar') ?>
-    
+        
+        <div class="content-wrapper p-3">
+            <?php if (!empty($this->params['breadcrumbs'])): ?>
+                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+            <?php endif ?>
 
-    <div class="container">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-
-        <?= $content ?>
+            <?= $content ?>
 
 
-    </div>
-</main>
+        </div>
+    </main>
+</div>
+
 
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">

@@ -4,12 +4,13 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\bootstrap5\Html;
 
-    NavBar::begin([
+
+ NavBar::begin([
         //'brandLabel' => Yii::$app->name,
         'brandLabel' => 'Formularios',
         'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark fixed-top',
-        'style' => 'background-color: #9c0c71; border-color: #000000;',]
+        'options' => ['class' => 'navbar-expand-md navbar-dark fixed-top shadow',
+        'style' => 'background-color: #8b008b; border-color: #000000;',]
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
@@ -35,4 +36,5 @@ use yii\bootstrap5\Html;
         ]
     ]);
     NavBar::end();
+    echo '<div class="header" style="height: 55px;"></div>';
     
