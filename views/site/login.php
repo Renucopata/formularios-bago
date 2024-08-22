@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="card-header">
             <h1><?= Html::encode($this->title) ?></h1>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="background-color: #f0d2d2;>
             <div class="site-login d-flex flex-column justify-content-center">
 
                 <p>Ingrese sus credenciales</p>
