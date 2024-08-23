@@ -13,7 +13,7 @@ use yii\bootstrap5\Html;
         'style' => 'background-color: #8b008b; border-color: #000000;',]
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
+        'options' => ['class' => 'navbar-nav ml-auto'],
         'items' => [
             //['label' => 'Home', 'url' => ['/site/index']],
             //['label' => 'About', 'url' => ['/site/about']],
