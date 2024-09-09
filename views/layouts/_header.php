@@ -7,7 +7,7 @@ use yii\bootstrap5\Html;
 
  NavBar::begin([
         //'brandLabel' => Yii::$app->name,
-        'brandLabel' => 'Formularios',
+        'brandLabel' => 'Mercado competitivo',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => 'navbar-expand-md navbar-dark fixed-top shadow',
         'style' => 'background-color: #8b008b; border-color: #000000;',]

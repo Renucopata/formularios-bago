@@ -11,15 +11,11 @@ use yii\bootstrap5\Nav;
     ],
     'items' => [
         [
-            'label' => 'Dashboard',
+            'label' => 'Mis mercados',
             'url' => ['/site/index']
         ],
         [
-            'label' => 'Videos',
-            'url' => ['/video/index']
-        ],
-        [
-            'label' => 'Comments',
+            'label' => 'opciones',
             'url' => ['/comment/index']
         ]
     ]
