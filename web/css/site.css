@@ -36,4 +36,26 @@ aside .nav-pills .nav-link.active {
     transform: translateY(-10px); /* Move the card upward */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
 }
+.btn-custom:hover {
+    background-color: #28a745; /* Change the background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+    transform: translateY(-7px); /* Move the button upward */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+}
+.card {
+    height: 100%; /* Ensures the card takes up the full height of its container */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    object-fit: cover; /* Ensures the image covers the card area without distortion */
+    height: 200px; /* Set a consistent height for all images */
+    width: 100%; /* Make sure the image width covers the entire card width */
+}
+
+.card-body {
+    flex-grow: 1; /* Ensures that the body grows to fill the remaining space */
+}
+
 

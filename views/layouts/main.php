@@ -13,15 +13,15 @@ use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
 
-$this ->beginContent('./views/layouts/base.php')
+$this->beginContent('@app/views/layouts/base.php');
 ?>
-    <main class="d-flex flex-grow-1">
+<main class="d-flex flex-grow-1">
     <?php 
-    if (!Yii::$app->user->isGuest) {
-        echo $this->render('_sidebar');
-    }
+    
+    if (!Yii::$app->user->isGuest): 
     ?>
-        
+        <?= $this->render('_sidebar') ?>
+
         <div class="content-wrapper p-3">
             <?php if (!empty($this->params['breadcrumbs'])): ?>
                 <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
@@ -29,7 +29,11 @@ $this ->beginContent('./views/layouts/base.php')
 
             <?= $content ?>
         </div>
-    </main>
-<?php $this->endContent() ?>
+    <?php 
+    endif; 
+    ?>
+</main>
+<?php 
+$this->endContent();
 
 
