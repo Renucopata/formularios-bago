@@ -11,7 +11,7 @@ $this->title = 'Mercados competitivos';
 <div class="site-index">
     <div class="container">
         <div class="d-flex justify-content-end p-3">
-            <?= Html::a('+ Crear mercado', ['site/custom'], ['class'=>'btn btn-success btn-custom']) ?>
+            <?= Html::a('+ Crear mercado', ['imsmercados/index'], ['class'=>'btn btn-success btn-custom']) ?>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
