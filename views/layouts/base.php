@@ -35,18 +35,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </div>
 
 
-<footer id="footer" class="mt-auto py-3 bg-light">
-    <div class="container">
-        <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; Bagó <?= date('Y') ?></div>
-            <div class="col-md-6 text-center text-md-end">
-                <img src="web\assets\cropped-bago-icon.png" alt="Bago logo" width="80" height="80">
-            </div>
-        </div>
-    </div>
-</footer>
+
+
 
 <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>

@@ -27,22 +27,23 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
+            
             ['class' => 'yii\grid\SerialColumn'],
 
             'CODIGOIMS',
             'MERCADO',
             'PRESENTACION',
             'PRODUCTOS',
-            'CANTIDAD',
-            'DESCUENTO',
+ //           'CANTIDAD',
+  //          'DESCUENTO',
             [
                 'attribute' => 'LINEA',
                 'value' => function($model){
                     
                 }
             ],
-            //'LINEA',
-            //'JEFEDEPRODUCTO',
+         
+            'JEFEDEPRODUCTO',
             //'UNIDADES',
             //'F10',
             //'F11',
@@ -51,6 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'F14',
             //'F15',
             //'F16',
+            ['class' => 'yii\grid\CheckboxColumn'],
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, ImsMercados $model, $key, $index, $column) {
